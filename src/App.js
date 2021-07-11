@@ -2,16 +2,18 @@ import '../src/App.css';
 import '../src/Styles/style.css'
 
 import Header from './Components/Header';
-import Aside from './Components/Aside';
+import TopNotice from './Components/TopNotice';
 import Main from './Components/Main';
 function App() {
   return (
     <div className="App">
-      <div>
-        <Aside></Aside>
+      <div style={{position: "relative", zIndex: "1"}}>
+        <TopNotice></TopNotice>
         <Header></Header>
       </div>
-      <Main></Main>
+      <div style={{ minHeight: "1080px"}}>
+        <Main></Main>
+      </div>
     </div>
   );
 }
