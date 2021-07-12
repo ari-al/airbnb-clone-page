@@ -46,3 +46,83 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/**-----------------------css reset---------------------------**/
+
+header {
+	height: 80px;
+}
+
+header>div{
+	padding-left: 80px;
+    padding-right: 80px;
+    margin: 0px;
+    position: relative;
+    display: flex;
+}
+
+.logo {
+    display: inline-flex;
+    height: 80px;
+    position: relative;
+    vertical-align: middle;
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
+.dpBlock {
+	display: block;
+}
+
+.alignItemCenter {
+	display: flex;
+	align-items: center;
+}
+
+.topMenuButton {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	color: #FFFFFF;
+	text-decoration:none;
+	padding: 12px;
+	display: flex;
+}
+
+.userInfoButton {
+	background: transparent;
+	border: 1px solid #DDDDDD; 
+	color: #222222; 
+	align-items: center; 
+	background-color: #FFFFFF; 
+	border-radius: 21px;
+	height: 42px; 
+	position: relative; 
+	vertical-align: middle; 
+	padding: 5px 5px 5px 12px; 
+	display: flex;
+}
+
+.svgIcon {
+	display: block;
+	fill: currentcolor;
+}
+
+.svgSmallIcon {
+	display: block;
+	height: 16px;
+	width: 16px;
+	fill: currentcolor;
+}
+
+.SearchFormArea {
+	min-width: 348px;
+    padding: 0px 24px;
+}
+
+.SearchFormWrapper {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+}
