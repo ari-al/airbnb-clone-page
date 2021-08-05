@@ -11,7 +11,7 @@ function App() {
         <TopNotice></TopNotice>
         <Header></Header>
       </div>
-      <div style={{ minHeight: "1080px"}}>
+      <div style={{ minHeight: "1080px", position: "absolute", top: "0px", width: "100%"}}>
         <Main></Main>
       </div>
     </div>

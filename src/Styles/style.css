@@ -149,3 +149,12 @@ header>div{
     flex: 0 0 0px;
     height: 32px;
 }
+
+
+.cityIconText {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 22px;
+	text-decoration:none;
+	color: #292929;
+}
