@@ -73,6 +73,22 @@ header>div{
 	display: block;
 }
 
+.flex{
+	display: flex;
+}
+
+.inputTypeText{ 
+	display: inline-block;
+	background: none;
+	font-Size: 14px;
+	line-height: 18px;
+	color: #6b6b6b;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-weight: 400;
+}
+
 .alignItemCenter {
 	display: flex;
 	align-items: center;
@@ -125,4 +141,11 @@ header>div{
 	position: absolute;
 	width: 100%;
 	left: 0px;
+}
+
+.crossLine {
+	align-self: center;
+    border-right: 1px solid #DDDDDD;
+    flex: 0 0 0px;
+    height: 32px;
 }
