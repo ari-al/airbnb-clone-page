@@ -1,7 +1,7 @@
 const AnchorButton = (props)=>{
     return(
         <div className={props.itemClass}>
-            <div>
+            <div className="buttonBackground">
                 <a href="/" className={props.buttonClass}>
                     {props.children}
                 </a>

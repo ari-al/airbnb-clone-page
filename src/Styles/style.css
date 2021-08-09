@@ -93,6 +93,24 @@ header>div{
 	display: flex;
 	align-items: center;
 }
+.buttonBackground{
+	position: relative;
+}
+.buttonBackground:after{
+	content:'\00a0';
+	display: block;
+	background: #ffffff;
+	width: 100%;
+	height: 100%;
+    border-radius: 30px;
+    opacity: 0%; 
+	position: absolute;
+	top: 0%;
+}
+
+.buttonBackground:hover:after{
+    opacity: 20%; 
+}
 
 .topMenuButton {
 	font-size: 14px;
@@ -100,7 +118,7 @@ header>div{
 	line-height: 18px;
 	color: #FFFFFF;
 	text-decoration:none;
-	padding: 12px;
+	padding: 13px;
 	display: flex;
 }
 
@@ -116,6 +134,7 @@ header>div{
 	vertical-align: middle; 
 	padding: 5px 5px 5px 12px; 
 	display: flex;
+	margin-left: 5px;
 }
 
 .svgIcon {
@@ -157,4 +176,67 @@ header>div{
 	line-height: 22px;
 	text-decoration:none;
 	color: #292929;
+}
+
+.searchTab {
+	display: flex;
+	margin: 0 auto;
+}
+
+.searchTab>label>span {
+	display: flex;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	padding: 10px 16px; 
+	color: #FFFFFF;
+}
+
+.searchTab>label>span:hover {
+	color: #cecdcd;
+}
+
+.searchTab>label:after {
+	content:'\00a0';
+	background: none;
+    display: block;
+    height: 2px;  
+	width: 18px;
+	transform: scaleX(0);
+    margin: auto;
+	transition: 0.2s
+}
+
+.searchTab>label:hover:after {
+	content:'\00a0';
+	background: #ffffff;
+    width: 5px;
+	height: 2px;  
+	transform: scaleX(1);
+	transition: 0.3s;
+}
+
+.searchItem:after {
+    content: '\00a0';
+    align-self: center;
+    border-right: 1px solid #DDDDDD;
+    flex: 0 0;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+.searchItem:hover:after {
+	background:  #EBEBEB;
+	background-clip: padding-box;
+	border: 1px solid transparent;
+	border-radius: 32px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	transform: none;
+	height : 100%;
 }
