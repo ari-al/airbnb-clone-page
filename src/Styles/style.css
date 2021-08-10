@@ -57,7 +57,6 @@ header>div{
 	padding-left: 80px;
     padding-right: 80px;
     margin: 0px;
-    position: relative;
     display: flex;
 }
 
@@ -239,4 +238,10 @@ header>div{
 	top: 0px;
 	transform: none;
 	height : 100%;
+}
+
+.fixedtrue{
+	position: fixed;
+	left: 0px;
+	right: 0px;
 }
