@@ -4,15 +4,16 @@ import '../src/Styles/style.css'
 import Header from './Components/Header';
 import TopNotice from './Components/TopNotice';
 import Main from './Components/Main';
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 
 
-function App(status) {
+function App() {
   const [fixed, setFixed] = useState("false");
-console.log(fixed);
+
   function FixedHeader(){
     if(window.scrollY>0){
       setFixed("true");
+      console.log(fixed);
     }else{
       setFixed("false");
     }
@@ -21,7 +22,6 @@ console.log(fixed);
   
   window.onscroll = function(e) {
     e.preventDefault();
-    console.log(window.scrollY);
     FixedHeader();
     return 0;
   };
@@ -30,7 +30,7 @@ console.log(fixed);
     <div className="App">
       <div style={{position: "relative", zIndex: "1"}}>
         <TopNotice></TopNotice>
-        <Header fixed={ status.fixed }></Header>
+        <Header fixed={ fixed }></Header>
       </div>
       <div style={{ minHeight: "1080px", position: "absolute", top: "0px", width: "100%"}}>
         <Main></Main>

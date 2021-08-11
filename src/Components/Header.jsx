@@ -1,7 +1,6 @@
 import SearchForm from './SearchForm';
 import AnchorButton from './AnchorButton';
 
-
 const UserInfoButton = (props)=>{
     return(
         <button class="userInfoButton">
