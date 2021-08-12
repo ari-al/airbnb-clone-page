@@ -6,7 +6,7 @@ function SearchForm(props){
         const target = document.querySelector('form');
         if (target.classList.contains('fixed')) {
             target.classList.remove('dpNone');
-            setTimeout(function(){ target.classList.add('dpNone')},100);
+            // setTimeout(function(){ target.classList.add('dpNone')},100);
         }
     });
 
