@@ -51,13 +51,7 @@ table {
 
 header {
 	height: 80px;
-}
-
-header>div{
-	padding-left: 80px;
-    padding-right: 80px;
-    margin: 0px;
-    display: flex;
+	position:relative;
 }
 
 .logo {
@@ -148,12 +142,12 @@ header>div{
 	fill: currentcolor;
 }
 
-.SearchFormArea {
+.searchFormArea {
 	min-width: 348px;
     padding: 0px 24px;
 }
 
-.SearchFormWrapper {
+.searchFormWrapper {
 	display: flex;
 	align-items: center;
 	position: absolute;
@@ -240,8 +234,56 @@ header>div{
 	height : 100%;
 }
 
-.fixedtrue{
+.fixed{
 	position: fixed;
 	left: 0px;
 	right: 0px;
+	top: 0px;
+}
+
+header>div{
+	padding-left: 80px;
+    padding-right: 80px;
+    margin: 0px;
+    display: flex;
+}
+
+header>.visibleBox{
+	background: #ffffff;
+	height: 80px;
+	opacity: 1;
+	transition: 0.2s;
+}
+header>.invisibleBox{
+	opacity: 0;
+    background: #ffffff;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    padding: 0;
+    transition: 0.2s;
+}
+.dpNone{
+	display: none;
+	z-index: -5;
+}
+.searchFormArea.dpBlock{
+	transition: 0.5s 
+}
+.searchForm{
+	margin: 0 auto;
+    max-width: 850px;
+	position: relative;
+	top: 0px;
+}
+.searchForm.unfixed {
+    top: 0px;
+    transform: scale(1);
+    transition: 2s;
+}
+
+.searchForm.fixed {
+	top: -50px; 
+	transform: scale(0.2);
+	transition: 0.2s;
 }

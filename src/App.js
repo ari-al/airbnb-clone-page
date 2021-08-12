@@ -8,14 +8,13 @@ import React, {useState} from 'react';
 
 
 function App() {
-  const [fixed, setFixed] = useState("false");
+  const [fixed, setFixed] = useState(false);
 
   function FixedHeader(){
     if(window.scrollY>0){
-      setFixed("true");
-      console.log(fixed);
+      setFixed(true);
     }else{
-      setFixed("false");
+      setFixed(false);
     }
     return 0;
   }

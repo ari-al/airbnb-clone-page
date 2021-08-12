@@ -1,7 +1,17 @@
+import React, {useState, useEffect} from 'react';
+function SearchForm(props){
+    const [fixed, setFixed] = useState(props.fixed);
 
-function SearchForm(){
+    useEffect(() => {
+        const target = document.querySelector('form');
+        if (target.classList.contains('fixed')) {
+            target.classList.remove('dpNone');
+            setTimeout(function(){ target.classList.add('dpNone')},100);
+        }
+    });
+
     return(
-        <form style={{margin: "0 auto", maxWidth: "850px" }}>
+        <form className={ ["searchForm", props.fixed ? "fixed":"unfixed"].join(' ') }>
             <fieldset style={{ display: "flex", alignItems: "center", height:"80px" }}>
                 <div className="searchTab">
                     <label>
