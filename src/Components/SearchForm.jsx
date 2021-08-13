@@ -12,7 +12,8 @@ function SearchForm(props){
 
     return(
         <form className={ ["searchForm", props.fixed ? "fixed":"unfixed"].join(' ') }>
-            <fieldset style={{ display: "flex", alignItems: "center", height:"80px" }}>
+            { props.children }
+            {/* <fieldset style={{ display: "flex", alignItems: "center", height:"80px" }}>
                 <div className="searchTab">
                     <label>
                         <span> 숙소 </span>
@@ -81,7 +82,7 @@ function SearchForm(props){
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </form>
     );
 }

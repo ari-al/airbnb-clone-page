@@ -59,7 +59,7 @@ function Main() {
                     <div>
                         <div className="flex">
                             <div style={{ width: "100%", position: "relative" }}>
-                                <div style={{ height: "480px", width: "500px", position: "relative", zIndex: "5",  display: "flex", alignItems: "left" }}>
+                                <div style={{ height: "480px", width: "500px", position: "relative",  display: "flex", alignItems: "left" }}>
                                     <div style={{ textAlign: "left"}}>
                                         <span style={{ fontSize: "47px", fontWeight: "700", lineHeight: "52px", paddingBottom: "10px", margin: "77px", display: "block" }}>
                                             어디든 상관없이 떠나고 싶을때 에어비앤비가 도와드립니다!
@@ -70,7 +70,7 @@ function Main() {
                                     </div>
                                 </div>
                                 <a href="/" style={{ display: "flex", alignItems: "center" }}>
-                                    <div style={{ height: "480px", width: "100%", position: "absolute", top: "0px", padding: "8px" }}>
+                                    <div style={{ height: "480px", width: "100%", position: "absolute", top: "0px", padding: "8px", zIndex: -5 }}>
                                         <div style={{ width: "100%", height: "100%", overflow: "hidden", borderRadius: "16px", position: "relative", marginRight: "16px" }}> 
                                             <img src={ middleBanner } alt="" style={{ width: "100%", objectFit: "cover", borderRadius: "16px" }}/>
                                         </div>

@@ -92,7 +92,6 @@ header {
 .buttonBackground:after{
 	content:'\00a0';
 	display: block;
-	background: #ffffff;
 	width: 100%;
 	height: 100%;
     border-radius: 30px;
@@ -102,6 +101,7 @@ header {
 }
 
 .buttonBackground:hover:after{
+	background: #ffffff;
     opacity: 20%; 
 }
 
@@ -289,4 +289,26 @@ header>.invisibleBox{
 
 .fixed .logoIcon {
 	color: rgb(255, 56, 92);
+}
+
+.fixed .topMenuButton {
+	color: #222222;
+	
+}
+
+.fixed .buttonBackground:hover:after{
+	background: #cfcfcf;
+    opacity: 20%; 
+}
+
+.smallSearchText{
+    display: flex;
+    background: none;
+    font-Size: 15px;
+    line-height: 40px;
+    margin: 0px;
+    padding: 0px 15px 0px 15px;
+    border: 0px;
+    font-weight: 800;
+    flex: 1 1 auto;
 }
