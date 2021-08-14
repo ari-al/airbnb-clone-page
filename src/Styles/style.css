@@ -274,17 +274,23 @@ header>.invisibleBox{
     max-width: 850px;
 	position: relative;
 	top: 0px;
+	height: 80px;
 }
 .searchForm.unfixed {
     top: 0px;
     transform: scale(1);
-    transition: 0.3s;
+    transition: 1s;
 }
 
 .searchForm.fixed {
 	top: -50px; 
 	transform: scale(0);
 	transition: 0.2s;
+}
+
+.searchForm.smallFixed {
+	top: 0px; 
+	transform: scale(1);
 }
 
 .fixed .logoIcon {

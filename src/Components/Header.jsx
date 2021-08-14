@@ -30,12 +30,14 @@ function Header(props) {
                         <SearchForm fixed={ props.fixed }>
                         {
                             props.fixed === true
-                            ? <button style={{border: "1px solid #DDDDDD", borderRadius: "32px", backgroundColor: "#FFFFFF", width: "300px", textAlign: "left" }}>
+                            ?<div style={{ height: "80px", lineHeight: "80px" }}>
+                                <button style={{border: "1px solid #DDDDDD", borderRadius: "32px", backgroundColor: "#FFFFFF", width: "300px", textAlign: "left" }}>
                                     <div className="flex">
-                                            <div className="smallSearchText">검색 시작하기</div>
-                                            <div style= {{ height: "32px", borderRadius: "50%", background: "rgb(255, 56, 92)", width: "32px", alignItems: "center", margin: "auto", display: "flex" }}><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style={{ display: "block", fill: "none", height: "12px", width: "12px", stroke: "currentcolor", strokeWidth: "5.33333", color: "#ffffff", padding: "10px" }}><g fill="none"><path d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"></path></g></svg></div>
+                                        <div className="smallSearchText">검색 시작하기</div>
+                                        <div style= {{ height: "32px", borderRadius: "50%", background: "rgb(255, 56, 92)", width: "32px", alignItems: "center", margin: "auto", display: "flex" }}><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style={{ display: "block", fill: "none", height: "12px", width: "12px", stroke: "currentcolor", strokeWidth: "5.33333", color: "#ffffff", padding: "10px" }}><g fill="none"><path d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"></path></g></svg></div>
                                     </div>
                                 </button>
+                            </div>
                             :<div>   
                                 <fieldset style={{ display: "flex", alignItems: "center", height:"80px" }}>
                                     <div className="searchTab">
@@ -50,9 +52,9 @@ function Header(props) {
                                         </label>
                                     </div>
                                 </fieldset>
-                                <div style={{border: "1px solid #DDDDDD", borderRadius: "32px", color: "#222222", height: "66px", backgroundColor: "#FFFFFF", width: "100%", textAlign: "left", display: "flex" }}>
-                                    <div style={{ position: "relative" }} className="searchItem">
-                                        <div className="flex">
+                                <div style={{border: "1px solid #DDDDDD", borderRadius: "32px", color: "#222222", height: "66px", backgroundColor: "#FFFFFF", width: "850px", textAlign: "left", display: "flex" }}>
+                                    <div style={{ position: "relative", flex: "1.5 0 0%" }} className="searchItem">
+                                        <div className="flex" style={{ flex: "1 0 0%" }}>
                                             <label style={{ padding: "14px 32px", display: "block", zIndex: "5" }}>
                                                 <div style={{ fontWeight: "800", letterSpacing: "0.04em", fontSize: "12px", lineHeight: "16px", paddingBottom: "2px" }}>
                                                     <div style={{ display: "flex", paddingBottom: "2px" }}>위치</div>
@@ -62,7 +64,7 @@ function Header(props) {
                                         </div>
                                     </div>
                                     <div className="flex" style={{ flex: "2 0 0%" }}>
-                                        <div style={{ position: "relative" }} className="searchItem">
+                                        <div style={{ position: "relative", flex: "1 0 0%" }} className="searchItem">
                                             <div className="flex">
                                                 <div style={{ padding: "14px 32px", display: "block", zIndex: "5" }}>
                                                     <div style={{ fontWeight: "800", letterSpacing: "0.04em", fontSize: "12px", lineHeight: "16px", paddingBottom: "2px" }}>
@@ -72,7 +74,7 @@ function Header(props) {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div style={{ position: "relative" }} className="searchItem">
+                                        <div style={{ position: "relative", flex: "1 0 0%" }} className="searchItem">
                                             <div className="flex">
                                                 <div style={{ padding: "14px 32px", display: "block", zIndex: "5" }}>
                                                     <div style={{ fontWeight: "800", letterSpacing: "0.04em", fontSize: "12px", lineHeight: "16px", paddingBottom: "2px" }}>
@@ -83,9 +85,9 @@ function Header(props) {
                                             </div>
                                         </div>
                                     </div>
-                                    <div style={{ position: "relative" }} className="searchItem">
+                                    <div style={{ position: "relative", flex: "1.3 0 0%"  }} className="searchItem">
                                         <div className="flex" style= {{ alignItems: "center" }}>
-                                            <div className="flex">
+                                            <div className="flex" style= {{ flex: "1 0 0%"  }}>
                                                 <div style={{ padding: "14px 32px", display: "block", zIndex: "5" }}>
                                                     <div style={{ fontWeight: "800", letterSpacing: "0.04em", fontSize: "12px", lineHeight: "16px", paddingBottom: "2px" }}>
                                                         <div style={{ display: "flex", paddingBottom: "2px" }}>인원</div>
@@ -109,7 +111,6 @@ function Header(props) {
                                 </div>
                             </div>
                         }
-
                         </SearchForm>
                     </div>
                 </div>
