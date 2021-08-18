@@ -4,6 +4,7 @@ import '../src/Styles/style.css'
 import Header from './Components/Header';
 import TopNotice from './Components/TopNotice';
 import Main from './Components/Main';
+import Footer from './Components/Footer';
 import React, {useState} from 'react';
 
 
@@ -33,7 +34,9 @@ function App() {
       </div>
       <div style={{ minHeight: "1080px", position: "absolute", top: "0px", width: "100%"}}>
         <Main></Main>
+        <Footer></Footer>
       </div>
+      
     </div>
   );
   

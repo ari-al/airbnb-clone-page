@@ -318,3 +318,33 @@ header>.invisibleBox{
     font-weight: 800;
     flex: 1 1 auto;
 }
+
+.footerSection {
+	line-height: 18px;
+	text-align: left;
+	flex: 1 0 0%
+}
+
+.footerLabel {
+	font-weight: 600;
+	font-size: 13px;
+}
+
+.footerList {
+    font-size: 14px;
+}
+
+.footerList>li {
+	margin-top: 18px;
+}
+
+.footerList a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.rowList>li {
+	display: inline-block;
+	padding-left: 7px;
+	padding-right: 7px;
+}
